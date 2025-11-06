@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Lightbox LED Photography Kits - Take great photos and get more sales. Instant results with professional lighting solutions.">
+    <meta name="keywords" content="photography lighting, LED kits, professional photography, product photography">
+    <meta name="author" content="Lightbox LED Photography">
+    <title>Lightbox LED Photography Kits - Professional Lighting Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .accordion-button {
+            transition: all 0.3s ease;
+        }
+        
+        .accordion-button.active {
+            background-color: #f3f4f6;
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .accordion-content.active {
+            max-height: 500px;
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+        
+        .announcement-bar {
+            background: linear-gradient(90deg, #1f2937 0%, #374151 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Announcement Bar -->
+    <div class="announcement-bar text-white py-3 px-4 text-center text-sm md:text-base">
+        <i class="fas fa-truck mr-2"></i>Fast Worldwide Shipping (5 days delivery) | 100% Satisfaction Guarantee
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="https://test-acc-12349.github.io/lightbox-led-photography-kits-2025-11-06-n9dfr" class="text-2xl font-bold text-gray-900 flex items-center">
+                        <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                        <span class="hidden sm:inline">Lightbox LED</span>
+                        <span class="sm:hidden">LED</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="https://test-acc-12349.github.io/lightbox-led-photography-kits-2025-11-06-n9dfr" class="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-medium">← Back</a>
+                </nav>
+
+                <!-- Right Side Actions -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://checkout.stripe.com/c/pay/cs_live_b1n4XezSnTLY27IeaApXnYo6UCTeOQILKYH2G1AIQ4TpgZCgqGVsKH4f4S#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blppbHNgWjA0VF18NTROMlA8Y2g0dG9Tc1NpYmxEVU5GZmZsPT1cQVZccjByUGBvfFxzSGZJQENzQnNgNnQ2YjYwN0NcSWpMVFAxa2lmSjBXa0RCZHdBTVU2SnAxVUBgNTVzQE53aFFjUCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8naHBpcWxabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl" class="hidden sm:inline-block px-6 py-2 bg-yellow-500 text-gray-900 font-semibold rounded-lg btn-primary hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Content Section -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Blog Header -->
+            <article class="prose prose-lg max-w-none">
+                <div class="mb-8">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                        How to Choose the Perfect LED Photography Lighting Kit for Your Business
+                    </h1>
+                    <div class="flex flex-wrap items-center gap-4 text-gray-600 mb-6">
+                        <span class="flex items-center"><i class="fas fa-calendar mr-2 text-yellow-500"></i>December 2024</span>
+                        <span class="flex items-center"><i class="fas fa-user mr-2 text-yellow-500"></i>By Lightbox LED Team</span>
+                        <span class="flex items-center"><i class="fas fa-clock mr-2 text-yellow-500"></i>8 min read</span>
+                    </div>
+                </div>
+
+                <!-- Featured Image -->
+                <img src="https://images.unsplash.com/photo-1535016120754-fd58615ccbfd?w=1200&h=675&fit=crop&q=80" alt="Professional LED photography lighting kit setup in studio environment" class="w-full h-auto rounded-lg shadow-lg mb-8 object-cover">
+
+                <!-- Blog Content -->
+                <div class="space-y-6 text-gray-700 leading-relaxed">
+                    <p class="text-lg">
+                        If you're serious about product photography, investing in a quality LED lighting kit can transform your images from amateur to professional in minutes. Whether you're running an e-commerce store, managing social media content, or building a portfolio, the right lighting setup is absolutely crucial. In this comprehensive guide, we'll walk you through everything you need to know about selecting the perfect LED photography lighting kit for your specific business needs.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Understanding LED Lighting Technology</h2>
+                    <p>
+                        LED (Light Emitting Diode) lighting has revolutionized photography in recent years. Unlike traditional tungsten or halogen lights, LEDs produce consistent, flicker-free illumination while generating significantly less heat. This makes them ideal for product photography where you need to maintain precise control over your lighting conditions without worrying about heat damage to delicate items.
+                    </p>
+                    <p>
+                        The key advantage of LED technology is its energy efficiency. LED lights consume up to 80% less energy than traditional lighting options, which means lower electricity bills and the ability to run your setup for extended periods without concerns about power consumption. Additionally, LEDs have a much longer lifespan, often lasting 50,000 hours or more, making them a cost-effective long-term investment for your photography business.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Color Temperature: The Foundation of Professional Lighting</h2>
+                    <p>
+                        One of the most important specifications to understand when choosing an LED lighting kit is color temperature, measured in Kelvin (K). Color temperature determines the warmth or coolness of your light, which dramatically affects how your products appear in photographs.
+                    </p>
+                    <p>
+                        Most professional LED photography kits offer adjustable color temperature ranging from 3200K (warm, similar to incandescent bulbs) to 5600K (cool, similar to daylight). The ability to adjust color temperature is crucial because different products photograph better under different lighting conditions. Jewelry and metals often look stunning under cooler daylight temperatures, while food and warm-toned products may benefit from warmer lighting. A versatile LED kit that allows you to adjust between these ranges gives you maximum flexibility for any product type.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Brightness and Power Considerations</h2>
+                    <p>
+                        The brightness of your LED lights, measured in lumens or by the wattage equivalent, determines how much illumination you can achieve. For product photography, you typically want lights that are powerful enough to properly illuminate your subject while allowing you to use a smaller aperture for greater depth of field. This is especially important if you're photographing products with reflective surfaces.
+                    </p>
+                    <p>
+                        Most professional LED photography kits provide lights with at least 1000 lumens per panel, which is sufficient for most product photography scenarios. However, if you're planning to photograph larger items or need more dramatic lighting effects, you might want to consider kits with higher output. The power consumption should also be considered – efficient LED lights should provide excellent brightness while consuming minimal electricity, typically between 30-50 watts per panel for professional-grade equipment.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Key Features to Look for in a Professional LED Kit</h2>
+                    <p>
+                        When evaluating different LED photography lighting kits, several critical features should influence your decision. First, look for dimmability – the ability to adjust brightness smoothly from 10% to 100%. This flexibility allows you to fine-tune your lighting to match your specific shooting conditions and achieve the exact mood you want for your product photos.
+                    </p>
+                    <p>
+                        Second, consider the light quality and diffusion options. Professional kits should include diffusers that soften the light and reduce harsh shadows. The quality of these diffusers directly impacts the final appearance of your product photographs. Additionally, look for kits that offer adjustable light stands with smooth height adjustment, allowing you to position your lights precisely where you need them.
+                    </p>
+                    <p>
+                        Third, evaluate the backdrop system. A complete LED photography kit should include sturdy backdrop support with multiple color options. Most professionals recommend having at least white, black, and gray backdrops to accommodate different product types and aesthetic preferences. The backdrop system should be easy to assemble and break down, with clamps that securely hold your chosen backdrop without slipping.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Portability vs. Studio Setup</h2>
+                    <p>
+                        Your specific needs will determine whether you need a portable kit or a permanent studio setup. If you're photographing products in multiple locations or need flexibility, look for lightweight LED panels and compact light stands that are easy to transport. Modern LED lights are significantly lighter than traditional lighting options, making them ideal for on-location work.
+                    </p>
+                    <p>
+                        For businesses operating from a dedicated space, you might prioritize a more robust setup with heavier-duty stands and larger light panels. However, even permanent studio setups benefit from the portability advantages of LED technology, as you can easily reposition lights during shoots without the physical strain of traditional lighting equipment.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Budget Considerations and ROI</h2>
+                    <p>
+                        Quality LED photography lighting kits range from budget-friendly options starting around $100 to professional-grade setups exceeding $500. When evaluating budget, consider the return on investment. Professional product photography can increase conversion rates by up to 40%, meaning a $300 lighting kit investment could easily pay for itself within the first few weeks of improved sales.
+                    </p>
+                    <p>
+                        Don't make the mistake of choosing the cheapest option available. Investing in a mid-range to professional-grade LED kit ensures consistent results, durability, and features that will serve your business well for years to come. Many reputable manufacturers offer warranty protection and customer support, which adds value beyond just the equipment itself.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Camera Compatibility and Flexibility</h2>
+                    <p>
+                        One of the greatest advantages of LED lighting kits is their universal compatibility. Whether you're using a professional DSLR, mirrorless camera, compact camera, or even a smartphone, quality LED lights work perfectly with all imaging devices. This flexibility is invaluable if you're experimenting with different cameras or planning to upgrade your equipment in the future.
+                    </p>
+                    <p>
+                        The consistent, flicker-free illumination from professional LED kits also makes them ideal for video content and live streaming – a growing need for many e-commerce businesses and content creators. This versatility means your investment serves multiple purposes beyond still photography.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Setup Time and Ease of Use</h2>
+                    <p>
+                        Professional product photographers often need to work quickly and efficiently. The best LED photography kits are designed for rapid setup and intuitive operation. Look for kits that can be assembled and ready to shoot within 10-15 minutes. This includes easily adjustable light stands, simple controls for brightness and color temperature adjustment, and straightforward backdrop assembly.
+                    </p>
+                    <p>
+                        Ease of use becomes especially important if you're training team members or if multiple people will be operating the equipment. Clear labeling, intuitive controls, and comprehensive documentation ensure that anyone can achieve professional results without extensive training.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Making Your Final Decision</h2>
+                    <p>
+                        Choosing the perfect LED photography lighting kit ultimately depends on your specific business needs, budget, and long-term vision. Start by clearly defining what you'll be photographing, where you'll be shooting, and what results you want to achieve. Consider whether you need portability, the maximum brightness required, and which features matter most to your workflow.
+                    </p>
+                    <p>
+                        Read reviews from other professionals in your industry, watch setup and usage videos, and don't hesitate to reach out to manufacturers with questions. Many reputable companies offer money-back guarantees or trial periods, allowing you to test the equipment before fully committing to the investment.
+                    </p>
+                    <p>
+                        Remember that investing in quality lighting is investing in the future of your business. Professional product photography directly impacts your sales, customer satisfaction, and brand perception. A quality LED lighting kit is one of the most cost-effective ways to dramatically improve your product images and drive measurable business results.
+                    </p>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-8 rounded">
+                        <p class="text-gray-900 font-semibold mb-2">Ready to upgrade your product photography?</p>
+                        <p class="text-gray-700 mb-4">Discover how our professional LED photography kits can transform your business. With easy setup, professional results, and proven ROI, thousands of businesses worldwide trust Lightbox LED to capture stunning product photos that increase sales and build customer trust.</p>
+                        <a href="https://checkout.stripe.com/c/pay/cs_live_b1n4XezSnTLY27IeaApXnYo6UCTeOQILKYH2G1AIQ4TpgZCgqGVsKH4f4S#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blppbHNgWjA0VF18NTROMlA8Y2g0dG9Tc1NpYmxEVU5GZmZsPT1cQVZccjByUGBvfFxzSGZJQENzQnNgNnQ2YjYwN0NcSWpMVFAxa2lmSjBXa0RCZHdBTVU2SnAxVUBgNTVzQE53aFFjUCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8naHBpcWxabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl" class="inline-block px-6 py-2 bg-yellow-500 text-gray-900 font-bold rounded-lg btn-primary hover:bg-yellow-400 transition-all duration-300">
+                            Shop Our Kits Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Related Articles -->
+                <div class="mt-12 pt-8 border-t border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Related Articles</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="p-6 border border-gray-200 rounded-lg hover:shadow-md transition-all duration-300">
+                            <h4 class="text-lg font-bold text-gray-900 mb-2">Professional Product Photography Tips</h4>
+                            <p class="text-gray-600 mb-4">Learn essential techniques for capturing product images that convert browsers into buyers.</p>
+                            <a href="#" class="text-yellow-500 font-semibold hover:text-yellow-600 transition-colors duration-300">Read More →</a>
+                        </div>
+                        <div class="p-6 border border-gray-200 rounded-lg hover:shadow-md transition-all duration-300">
+                            <h4 class="text-lg font-bold text-gray-900 mb-2">DIY vs Professional Photography: What's Right for Your Business?</h4>
+                            <p class="text-gray-600 mb-4">Explore the pros and cons of each approach and find the best solution for your needs.</p>
+                            <a href="#" class="text-yellow-500 font-semibold hover:text-yellow-600 transition-colors duration-300">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lightbulb text-yellow-500 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-white">Lightbox LED</h3>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                        Professional LED photography lighting kits that help businesses create stunning product photos and increase sales.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 text-gray-300 hover:text-gray-900 transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 text-gray-300 hover:text-gray-900 transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 text-gray-300 hover:text-gray-900 transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 text-gray-300 hover:text-gray-900 transition-all duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Photography Kits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Accessories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Replacement Parts</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Pro Bundles</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#faq" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Setup Guides</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Video Tutorials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h4 class="text-white font-semibold mb-4">Newsletter</h4>
+                        <p class="text-gray-400 text-sm mb-4">Subscribe for photography tips and exclusive offers</p>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            <button class="px-4 py-2 bg-yellow-500 text-gray-900 font-semibold rounded-r-lg hover:bg-yellow-400 transition-colors duration-300">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-semibold mb-4">Policies</h4>
+                        <ul class="flex flex-wrap gap-4 text-sm">
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Shipping Info</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Returns</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Warranty</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; <span id="year">2024</span> Lightbox LED Photography. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-2 text-sm text-gray-400">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure Shopping | SSL Encrypted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-toggle')?.addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu?.classList.toggle('active');
+            menu?.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                const menu = document.getElementById('mobile-menu');
+                menu?.classList.add('hidden');
+                menu?.classList.remove('active');
+            });
+        });
+
+        // Accordion toggle function
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            // Close all other accordions
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            document.querySelectorAll('.accordion-button').forEach(btn => {
+                if (btn !== button) {
+                    btn.classList.remove('active');
+                    btn.querySelector('i').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current accordion
+            content.classList.toggle('active');
+            button.classList.toggle('active');
+            
+            // Animate icon
+            if (content.classList.contains('active')) {
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
