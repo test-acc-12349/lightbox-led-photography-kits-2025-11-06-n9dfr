@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Lightbox LED Photography Kits - Take great photos and get more sales. Instant results with professional lighting solutions.">
+    <meta name="keywords" content="photography lighting, LED kits, professional photography, product photography">
+    <meta name="author" content="Lightbox LED Photography">
+    <title>Lightbox LED Photography Kits - Professional Lighting Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .accordion-button {
+            transition: all 0.3s ease;
+        }
+        
+        .accordion-button.active {
+            background-color: #f3f4f6;
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .accordion-content.active {
+            max-height: 500px;
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+        
+        .announcement-bar {
+            background: linear-gradient(90deg, #1f2937 0%, #374151 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Announcement Bar -->
+    <div class="announcement-bar text-white py-3 px-4 text-center text-sm md:text-base">
+        <i class="fas fa-truck mr-2"></i>Fast Worldwide Shipping (5 days delivery) | 100% Satisfaction Guarantee
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-gray-900 flex items-center">
+                        <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                        <span class="hidden sm:inline">Lightbox LED</span>
+                        <span class="sm:hidden">LED</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-medium">Home</a>
+                    <a href="#features" class="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-medium">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-medium">Benefits</a>
+                    <a href="#about" class="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-medium">About</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-medium">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-medium">FAQ</a>
+                    <a href="#contact" class="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-medium">Contact</a>
+                </nav>
+
+                <!-- Right Side Actions -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://checkout.stripe.com/c/pay/cs_live_b1n4XezSnTLY27IeaApXnYo6UCTeOQILKYH2G1AIQ4TpgZCgqGVsKH4f4S#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blppbHNgWjA0VF18NTROMlA8Y2g0dG9Tc1NpYmxEVU5GZmZsPT1cQVZccjByUGBvfFxzSGZJQENzQnNgNnQ2YjYwN0NcSWpMVFAxa2lmSjBXa0RCZHdBTVU2SnAxVUBgNTVzQE53aFFjUCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8naHBpcWxabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl" class="hidden sm:inline-block px-6 py-2 bg-yellow-500 text-gray-900 font-semibold rounded-lg btn-primary hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2">
+                        Buy Now
+                    </a>
+                    <button class="mobile-menu-button md:hidden text-gray-900 focus:outline-none" id="mobile-menu-toggle">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#home" class="block text-gray-700 hover:text-gray-900 py-2 font-medium transition-colors duration-300">Home</a>
+                <a href="#features" class="block text-gray-700 hover:text-gray-900 py-2 font-medium transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block text-gray-700 hover:text-gray-900 py-2 font-medium transition-colors duration-300">Benefits</a>
+                <a href="#about" class="block text-gray-700 hover:text-gray-900 py-2 font-medium transition-colors duration-300">About</a>
+                <a href="#testimonials" class="block text-gray-700 hover:text-gray-900 py-2 font-medium transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block text-gray-700 hover:text-gray-900 py-2 font-medium transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block text-gray-700 hover:text-gray-900 py-2 font-medium transition-colors duration-300">Contact</a>
+                <a href="https://checkout.stripe.com/c/pay/cs_live_b1n4XezSnTLY27IeaApXnYo6UCTeOQILKYH2G1AIQ4TpgZCgqGVsKH4f4S#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blppbHNgWjA0VF18NTROMlA8Y2g0dG9Tc1NpYmxEVU5GZmZsPT1cQVZccjByUGBvfFxzSGZJQENzQnNgNnQ2YjYwN0NcSWpMVFAxa2lmSjBXa0RCZHdBTVU2SnAxVUBgNTVzQE53aFFjUCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8naHBpcWxabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl" class="block w-full mt-4 px-6 py-2 bg-yellow-500 text-gray-900 font-semibold rounded-lg text-center btn-primary hover:bg-yellow-400 transition-all duration-300">
+                    Buy Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative w-full h-screen md:h-[600px] overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="Professional photography lighting setup" class="w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+        
+        <div class="relative z-10 h-full flex items-center justify-center px-4">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                    Lightbox LED Photography Kits
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed font-light">
+                    Take great photos get more sales
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://checkout.stripe.com/c/pay/cs_live_b1n4XezSnTLY27IeaApXnYo6UCTeOQILKYH2G1AIQ4TpgZCgqGVsKH4f4S#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blppbHNgWjA0VF18NTROMlA8Y2g0dG9Tc1NpYmxEVU5GZmZsPT1cQVZccjByUGBvfFxzSGZJQENzQnNgNnQ2YjYwN0NcSWpMVFAxa2lmSjBXa0RCZHdBTVU2SnAxVUBgNTVzQE53aFFjUCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8naHBpcWxabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl" class="inline-block px-8 py-4 bg-yellow-500 text-gray-900 font-bold text-lg rounded-lg btn-primary hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 transition-all duration-300">
+                        Get Started Now
+                    </a>
+                    <a href="#features" class="inline-block px-8 py-4 bg-white bg-opacity-20 text-white font-bold text-lg rounded-lg border-2 border-white hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Why Choose Our Lighting Kits?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Everything you need to create professional-quality product photography that converts viewers into customers
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Professional Lighting -->
+                <div class="feature-card bg-white border border-gray-200 rounded-lg p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Professional Lighting</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our advanced LED technology delivers studio-quality lighting that eliminates shadows and highlights product details with stunning clarity and color accuracy.
+                    </p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Adjustable color temperature</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Flicker-free operation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Energy efficient</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Instant Results -->
+                <div class="feature-card bg-white border border-gray-200 rounded-lg p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Instant Results</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Set up in minutes and start shooting immediately. No complex configurations needed – just unbox, position, and capture stunning photos right away.
+                    </p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Quick setup process</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Plug and play system</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Immediate professional results</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: More Sales -->
+                <div class="feature-card bg-white border border-gray-200 rounded-lg p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">More Sales</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Professional product photography increases conversion rates by up to 40%. Better photos mean better customer engagement and higher revenue.
+                    </p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Increased conversions</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Better customer trust</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Higher average order value</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Transform Your Photography
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    See how our lighting kits deliver measurable results for your business
+                </p>
+            </div>
+
+            <!-- Benefit 1: Professional Photos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-24">
+                <div class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Professional photography setup with lighting" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Professional Photos</h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Achieve gallery-quality product photography without hiring expensive photographers. Our lighting kits are designed to bring out the best in every product, with perfect shadows, highlights, and color reproduction that makes items look their absolute best.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Studio Quality:</strong> Achieve professional lighting setups without expensive equipment rentals</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Consistent Results:</strong> Every photo looks great with uniform, repeatable lighting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Color Accuracy:</strong> True-to-life colors that accurately represent your products</span>
+                        </li>
+                    </ul>
+                    <a href="https://checkout.stripe.com/c/pay/cs_live_b1n4XezSnTLY27IeaApXnYo6UCTeOQILKYH2G1AIQ4TpgZCgqGVsKH4f4S#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blppbHNgWjA0VF18NTROMlA8Y2g0dG9Tc1NpYmxEVU5GZmZsPT1cQVZccjByUGBvfFxzSGZJQENzQnNgNnQ2YjYwN0NcSWpMVFAxa2lmSjBXa0RCZHdBTVU2SnAxVUBgNTVzQE53aFFjUCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8naHBpcWxabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl" class="inline-block px-6 py-3 bg-yellow-500 text-gray-900 font-bold rounded-lg btn-primary hover:bg-yellow-400 transition-all duration-300">
+                        Start Today
+                    </a>
+                </div>
+            </div>
+
+            <!-- Benefit 2: Instant Results -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-24 bg-white p-8 md:p-12 rounded-lg">
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Instant Results</h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        No learning curve, no complicated setups. Our lighting kits are engineered for simplicity and speed. Unbox your kit, position the lights, and start capturing professional-quality images within minutes. Perfect for businesses that need to move fast.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>5-Minute Setup:</strong> From box to first photo in just five minutes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Beginner Friendly:</strong> No technical expertise required – anyone can use it</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Immediate Impact:</strong> Start seeing better photos and better sales right away</span>
+                        </li>
+                    </ul>
+                    <a href="https://checkout.stripe.com/c/pay/cs_live_b1n4XezSnTLY27IeaApXnYo6UCTeOQILKYH2G1AIQ4TpgZCgqGVsKH4f4S#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blppbHNgWjA0VF18NTROMlA8Y2g0dG9Tc1NpYmxEVU5GZmZsPT1cQVZccjByUGBvfFxzSGZJQENzQnNgNnQ2YjYwN0NcSWpMVFAxa2lmSjBXa0RCZHdBTVU2SnAxVUBgNTVzQE53aFFjUCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8naHBpcWxabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl" class="inline-block px-6 py-3 bg-yellow-500 text-gray-900 font-bold rounded-lg btn-primary hover:bg-yellow-400 transition-all duration-300">
+                        Order Now
+                    </a>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Quick setup LED lighting kit" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                </div>
+            </div>
+
+            <!-- Benefit 3: More Sales -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="E-commerce product photography with sales growth" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">More Sales</h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        High-quality product photos directly impact your bottom line. Studies show that businesses using professional product photography see 40% higher conversion rates. Our lighting kits help you create the photos that turn browsers into buyers and increase your average order value.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Higher Conversions:</strong> 40% increase in conversion rates with professional photos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Reduced Returns:</strong> Accurate photos mean fewer customer disappointments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Better ROI:</strong> Invest in your photos, see returns in your sales</span>
+                        </li>
+                    </ul>
+                    <a href="https://checkout.stripe.com/c/pay/cs_live_b1n4XezSnTLY27IeaApXnYo6UCTeOQILKYH2G1AIQ4TpgZCgqGVsKH4f4S#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blppbHNgWjA0VF18NTROMlA8Y2g0dG9Tc1NpYmxEVU5GZmZsPT1cQVZccjByUGBvfFxzSGZJQENzQnNgNnQ2YjYwN0NcSWpMVFAxa2lmSjBXa0RCZHdBTVU2SnAxVUBgNTVzQE53aFFjUCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8naHBpcWxabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl" class="inline-block px-6 py-3 bg-yellow-500 text-gray-900 font-bold rounded-lg btn-primary hover:bg-yellow-400 transition-all duration-300">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    About Lightbox LED
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Dedicated to empowering businesses with professional photography solutions
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-gray-50 p-8 md:p-12 rounded-lg border border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Story</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Founded in 2018, Lightbox LED emerged from a simple observation: small businesses and entrepreneurs were struggling to compete with large corporations when it came to product photography. We saw talented creators spending thousands on professional photographers or investing in expensive, complicated equipment they didn't know how to use. We decided to change that. Our mission was to democratize professional-quality product photography by creating affordable, easy-to-use lighting solutions that anyone could master in minutes. Today, thousands of businesses worldwide trust our kits to showcase their products and drive sales.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 md:p-12 rounded-lg border border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission & Values</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        We believe that every business deserves access to professional-quality tools and resources. Our mission is to empower entrepreneurs, small business owners, and content creators with innovative lighting solutions that eliminate barriers to professional photography. We're committed to continuous innovation, exceptional customer service, and creating products that deliver real, measurable results. Quality, accessibility, and customer success are at the heart of everything we do. We don't just sell lighting kits – we partner with our customers to help them grow their businesses and achieve their dreams through the power of great visual storytelling.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-yellow-500 mb-2">10,000+</div>
+                    <p class="text-gray-700 font-semibold">Happy Customers Worldwide</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-yellow-500 mb-2">6+</div>
+                    <p class="text-gray-700 font-semibold">Years of Excellence</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-yellow-500 mb-2">40%</div>
+                    <p class="text-gray-700 font-semibold">Average Sales Increase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    What Our Customers Say
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Real results from real businesses using our lighting kits
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5/5 stars</span>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-base">
+                        "The Lightbox LED kit completely transformed my Etsy shop. Within two weeks of using it, my product photography looked so much better that my conversion rate jumped by 35%. I was skeptical about the price, but the ROI has been incredible. This is the best investment I've made for my business."
+                    </p>
+                    <div>
+                        <p class="font-semibold text-gray-900">Sarah Mitchell</p>
+                        <p class="text-sm text-gray-600">Handmade Jewelry Shop Owner, Etsy</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5/5 stars</span>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-base">
+                        "As someone with zero photography experience, I was intimidated by lighting setups. This kit is so intuitive – I had it working perfectly within 10 minutes. My product photos look professional now, and my customers have commented on how much better the images look. Highly recommend!"
+                    </p>
+                    <div>
+                        <p class="font-semibold text-gray-900">Marcus Chen</p>
+                        <p class="text-sm text-gray-600">E-commerce Store Manager, Fashion</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5/5 stars</span>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-base">
+                        "I was paying a photographer $200 per session to shoot my products. With the Lightbox LED kit, I'm doing it myself now and the quality is comparable. I've saved thousands in photography costs while actually improving my product presentation. This kit paid for itself in the first month."
+                    </p>
+                    <div>
+                        <p class="font-semibold text-gray-900">Jennifer Rodriguez</p>
+                        <p class="text-sm text-gray-600">Founder, Premium Skincare Brand</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5/5 stars</span>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-base">
+                        "The customer support team was incredibly helpful when I had questions about setup. The kit is well-designed and the lighting quality is exceptional. My Amazon product listings look so much more professional now, and I've noticed a clear uptick in sales. Worth every penny!"
+                    </p>
+                    <div>
+                        <p class="font-semibold text-gray-900">David Thompson</p>
+                        <p class="text-sm text-gray-600">Amazon FBA Seller, Electronics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Everything you need to know about our Lightbox LED Photography Kits
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 transition-colors duration-300 focus:outline-none" onclick="toggleAccordion(this)">
+                        <span class="text-lg font-semibold text-gray-900 text-left">What's included in the Lightbox LED Photography Kit?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50 border-t border-gray-200">
+                        <div class="p-6 text-gray-700 leading-relaxed">
+                            <p class="mb-4">Our complete Lightbox LED Photography Kit includes:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-2">
+                                <li>Two professional-grade LED light panels with adjustable brightness and color temperature</li>
+                                <li>Two sturdy light stands with smooth height adjustment (3-7 feet)</li>
+                                <li>One premium 24" x 36" photography backdrop with multiple color options (white, black, and gray)</li>
+                                <li>Complete backdrop support system with clamps and crossbar</li>
+                                <li>Professional-quality diffusers to soften and even out light</li>
+                                <li>Comprehensive setup guide and video tutorials</li>
+                                <li>24/7 customer support access</li>
+                            </ul>
+                            <p class="mt-4">Everything you need to start taking professional product photos is included – no additional purchases required.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 transition-colors duration-300 focus:outline-none" onclick="toggleAccordion(this)">
+                        <span class="text-lg font-semibold text-gray-900 text-left">How long does it take to set up and start using?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50 border-t border-gray-200">
+                        <div class="p-6 text-gray-700 leading-relaxed">
+                            <p class="mb-4">Our kit is designed for incredibly fast setup:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-2">
+                                <li><strong>Unboxing & Inspection:</strong> 2 minutes</li>
+                                <li><strong>Assembling Light Stands:</strong> 2 minutes per stand</li>
+                                <li><strong>Attaching LED Panels:</strong> 1 minute per panel</li>
+                                <li><strong>Setting Up Backdrop:</strong> 3-5 minutes</li>
+                                <li><strong>Positioning & Adjusting:</strong> 2-3 minutes</li>
+                            </ul>
+                            <p class="mt-4">Total setup time is typically 10-15 minutes. Once positioned, you can start taking professional photos immediately. The LED lights are plug-and-play with simple controls for brightness and color temperature adjustment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 transition-colors duration-300 focus:outline-none" onclick="toggleAccordion(this)">
+                        <span class="text-lg font-semibold text-gray-900 text-left">Will this kit work with my camera or smartphone?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50 border-t border-gray-200">
+                        <div class="p-6 text-gray-700 leading-relaxed">
+                            <p class="mb-4">Absolutely! Our Lightbox LED kit is completely camera-agnostic and works with:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-2">
+                                <li>Professional DSLR and mirrorless cameras (Canon, Nikon, Sony, etc.)</li>
+                                <li>Smartphone cameras (iPhone, Android) – our lighting is optimized for mobile photography</li>
+                                <li>Compact cameras and point-and-shoot devices</li>
+                                <li>Video cameras and streaming equipment</li>
+                            </ul>
+                            <p class="mt-4">The LED lights emit consistent, flicker-free illumination that works beautifully with any imaging device. The adjustable color temperature (3200K-5600K) ensures accurate white balance for any camera. Many of our customers use smartphones exclusively and achieve professional results.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 transition-colors duration-300 focus:outline-none" onclick="toggleAccordion(this)">
+                        <span class="text-lg font-semibold text-gray-900 text-left">What's your return policy and warranty?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50 border-t border-gray-200">
+                        <div class="p-6 text-gray-700 leading-relaxed">
+                            <p class="mb-4">We stand behind our products with comprehensive protection:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-2">
+                                <li><strong>30-Day Money-Back Guarantee:</strong> Not completely satisfied? Return it for a full refund, no questions asked</li>
+                                <li><strong>2-Year Warranty:</strong> Manufacturing defects are covered for 2 years from purchase</li>
+                                <li><strong>Free Replacement:</strong> Any defective components are replaced free of charge</li>
+                                <li><strong>Lifetime Support:</strong> Our customer service team is always available to help with setup, troubleshooting, and questions</li>
+                            </ul>
+                            <p class="mt-4">We also offer free shipping on returns and replacements. Your satisfaction is our top priority, and we're committed to making sure you have a great experience with our products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-gray-900 to-gray-800 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="Professional photography background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Ready to Transform Your Product Photography?
+            </h2>
+            <p class="text-xl text-gray-200 mb-8 leading-relaxed max-w-2xl mx-auto">
+                Join thousands of successful businesses already using Lightbox LED kits to capture stunning photos and drive sales. Get started today with our complete photography solution.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://checkout.stripe.com/c/pay/cs_live_b1n4XezSnTLY27IeaApXnYo6UCTeOQILKYH2G1AIQ4TpgZCgqGVsKH4f4S#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blppbHNgWjA0VF18NTROMlA8Y2g0dG9Tc1NpYmxEVU5GZmZsPT1cQVZccjByUGBvfFxzSGZJQENzQnNgNnQ2YjYwN0NcSWpMVFAxa2lmSjBXa0RCZHdBTVU2SnAxVUBgNTVzQE53aFFjUCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8naHBpcWxabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl" class="inline-block px-8 py-4 bg-yellow-500 text-gray-900 font-bold text-lg rounded-lg btn-primary hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-300">
+                    Order Your Kit Now
+                </a>
+                <a href="#contact" class="inline-block px-8 py-4 bg-white bg-opacity-20 text-white font-bold text-lg rounded-lg border-2 border-white hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900">
+                    Contact Sales Team
+                </a>
+            </div>
+            <p class="text-gray-300 mt-6 text-sm">
+                <i class="fas fa-lock mr-2"></i>Secure checkout | Free shipping on orders over $100 | 30-day money-back guarantee
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Get in Touch
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Have questions? Our team is here to help
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-8 md:p-12 border border-gray-200">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-yellow-500 mt-1 mr-4 flex-shrink-0"></i>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Email</p>
+                                    <a href="mailto:test@test.com" class="text-gray-600 hover:text-yellow-500 transition-colors duration-300">test@test.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone text-yellow-500 mt-1 mr-4 flex-shrink-0"></i>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Phone</p>
+                                    <p class="text-gray-600">Available Monday-Friday, 9AM-5PM EST</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-yellow-500 mt-1 mr-4 flex-shrink-0"></i>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Response Time</p>
+                                    <p class="text-gray-600">We respond to all inquiries within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Quick Links</h3>
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="https://checkout.stripe.com/c/pay/cs_live_b1n4XezSnTLY27IeaApXnYo6UCTeOQILKYH2G1AIQ4TpgZCgqGVsKH4f4S#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blppbHNgWjA0VF18NTROMlA8Y2g0dG9Tc1NpYmxEVU5GZmZsPT1cQVZccjByUGBvfFxzSGZJQENzQnNgNnQ2YjYwN0NcSWpMVFAxa2lmSjBXa0RCZHdBTVU2SnAxVUBgNTVzQE53aFFjUCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8naHBpcWxabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl" class="text-gray-700 hover:text-yellow-500 transition-colors duration-300 font-medium flex items-center">
+                                    <i class="fas fa-arrow-right mr-2 text-yellow-500"></i>Shop Now
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#features" class="text-gray-700 hover:text-yellow-500 transition-colors duration-300 font-medium flex items-center">
+                                    <i class="fas fa-arrow-right mr-2 text-yellow-500"></i>View Features
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#testimonials" class="text-gray-700 hover:text-yellow-500 transition-colors duration-300 font-medium flex items-center">
+                                    <i class="fas fa-arrow-right mr-2 text-yellow-500"></i>Customer Reviews
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#faq" class="text-gray-700 hover:text-yellow-500 transition-colors duration-300 font-medium flex items-center">
+                                    <i class="fas fa-arrow-right mr-2 text-yellow-500"></i>FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lightbulb text-yellow-500 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-white">Lightbox LED</h3>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                        Professional LED photography lighting kits that help businesses create stunning product photos and increase sales.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 text-gray-300 hover:text-gray-900 transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 text-gray-300 hover:text-gray-900 transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 text-gray-300 hover:text-gray-900 transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 text-gray-300 hover:text-gray-900 transition-all duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Photography Kits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Accessories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Replacement Parts</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Pro Bundles</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#faq" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Setup Guides</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Video Tutorials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h4 class="text-white font-semibold mb-4">Newsletter</h4>
+                        <p class="text-gray-400 text-sm mb-4">Subscribe for photography tips and exclusive offers</p>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            <button class="px-4 py-2 bg-yellow-500 text-gray-900 font-semibold rounded-r-lg hover:bg-yellow-400 transition-colors duration-300">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-semibold mb-4">Policies</h4>
+                        <ul class="flex flex-wrap gap-4 text-sm">
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Shipping Info</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Returns</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors duration-300">Warranty</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; <span id="year">2024</span> Lightbox LED Photography. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-2 text-sm text-gray-400">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure Shopping | SSL Encrypted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                const menu = document.getElementById('mobile-menu');
+                menu.classList.add('hidden');
+                menu.classList.remove('active');
+            });
+        });
+
+        // Accordion toggle function
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            // Close all other accordions
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            document.querySelectorAll('.accordion-button').forEach(btn => {
+                if (btn !== button) {
+                    btn.classList.remove('active');
+                    btn.querySelector('i').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current accordion
+            content.classList.toggle('active');
+            button.classList.toggle('active');
+            
+            // Animate icon
+            if (content.classList.contains('active')) {
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
